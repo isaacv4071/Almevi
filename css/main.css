@@ -110,7 +110,7 @@ a{
   .showcase {
     width: 100%;
     height: calc(100vh - 100px);
-    background: url("/img/banner.jpg") no-repeat center center/cover;
+    background: url("./img/banner.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +264,7 @@ footer p{
     #nosotros div.contenedor-ns {
         width: 100%;
         height: calc(100vh - 90px);
-        background: url("/img/img1.jpg") no-repeat center center/cover;
+        background: url("./img/img1.jpg") no-repeat center center/cover;
         display: flex;
         flex-direction: column;
         align-items: center;
