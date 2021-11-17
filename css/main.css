@@ -228,7 +228,7 @@ footer p {
 h3 {
     font-size: 1.98em;
     margin-bottom: .8em;
-    margin-top: .4em;
+    margin-top: .1em;
     font-weight: 100;
     font-family: 'Permanent Marker', cursive;
 }
@@ -301,24 +301,6 @@ input, textarea {
     padding: 0px 4px;
     color: #34495e;
     margin-top: 1.25em;
-}
-
-.has-error input, .has-error textarea {
-    color: #e74c3c;
-    border-color: #e74c3c;
-}
-
-.has-error .input-field-icon {
-    color: #e74c3c;
-}
-
-.has-success input, .has-success textarea {
-    color: #ff820e;
-    border-color: #ff820e;
-}
-
-.has-success .input-field-icon {
-    color: #ff820e;
 }
 
 input:focus, textarea:focus {
@@ -471,5 +453,24 @@ textarea.form-control:focus {
 
     #pagenosotros div.p-n #contenidop-n{
         margin-left: 0;
+    }
+
+    .form{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    input, textarea{
+        margin-top: 0;
+    }
+
+    textarea.form-control {
+        height: 40px;
+        transition: .6s;
+    }
+    
+    textarea.form-control:focus {
+        height: 60px;
+        border-color: #ff820e;
     }
 }
