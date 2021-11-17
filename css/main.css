@@ -220,15 +220,15 @@ footer p {
     margin: auto;
     background: white;
     border-radius: 3px;
-    margin-top: 5em;
-    margin-bottom: 6em;
+    margin-top: 4em;
+    margin-bottom: 4em;
     padding: 1.25em;
 }
 
 h3 {
     font-size: 1.98em;
     margin-bottom: .8em;
-    margin-top: .1em;
+    margin-top: .8em;
     font-weight: 100;
     font-family: 'Permanent Marker', cursive;
 }
@@ -368,6 +368,70 @@ textarea.form-control:focus {
     color: #fff;
 }
 
+.titulo-g{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #ff820e;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container-slider{
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #E1EBEE,
+                    0 15px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider{
+    display: flex;
+    width: 600%;
+    height: 460px;
+    margin-left: -100%;
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family:monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor:pointer;
+    color: black;
+}
+.slider__btn:hover{
+    background: white;
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
+
+
 @media(max-width: 1024px) {
     /* Inicio navegacion */
     .header {
@@ -455,22 +519,34 @@ textarea.form-control:focus {
         margin-left: 0;
     }
 
-    .form{
-        margin-top: 1em;
-        margin-bottom: 2em;
-    }
-
-    input, textarea{
-        margin-top: 0;
-    }
 
     textarea.form-control {
-        height: 40px;
+        height: 60px;
         transition: .6s;
     }
     
     textarea.form-control:focus {
-        height: 60px;
+        height: 100px;
         border-color: #ff820e;
+    }
+
+    .container-slider{
+        max-width: 330px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .slider{
+        height: 350px;
+    }
+
+    .slider__img{
+        max-width: 450px;
+    }
+
+    .slider__btn{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
     }
 }
