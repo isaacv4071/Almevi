@@ -464,25 +464,12 @@ textarea.form-control:focus {
         margin-top: 12%;
     }
 
-    #pagenosotros div.p-n{
-        flex-direction: column;
-    }
-
-    #pagenosotros div.p-n iframe{
-        width: 200px;
-        height: 200px;
-    }
-
-    #pagenosotros div.p-n #contenidop-n{
-        margin-left: 0;
-    }
-}
-
-@media(max-width: 790px) {
-
     #pagenosotros div.p-n iframe,
     #pagenosotros div.p-n h4{
         display: none;
     }
 
+    #pagenosotros div.p-n #contenidop-n{
+        margin-left: 0;
+    }
 }
